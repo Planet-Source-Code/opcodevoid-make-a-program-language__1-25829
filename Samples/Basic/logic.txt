@@ -1,0 +1,8 @@
+showwindow;
+
+create>commandbutton>cmd;
+cmd.caption="LOP";
+loop&*t;
+        ~1cmd,1; 
+	[initmenu,0;
+goback>t;

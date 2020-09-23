@@ -1,0 +1,16 @@
+showwindow;
+create>commandbutton>cmd;
+
+
+cmd.caption=Example of function;
+
+
+
+
+loop&*f;	
+~cmd,1;
+[msgbox="WOW I think";
+loop&*t;
+flushflags;
+goback>f;
+

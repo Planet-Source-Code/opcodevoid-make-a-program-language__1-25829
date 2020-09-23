@@ -1,0 +1,10 @@
+showwindow;
+create>commandbutton>cmd;
+cmd.caption="Whatch me move";
+cmd.left= 0;
+loop&*t;
+!msgbox="Check This out";
+cmd.left=900;
+!msgbox="Kewl Huh See ya";
+	/
+

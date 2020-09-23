@@ -1,0 +1,15 @@
+showwindow;
+create>commandbutton>cmd;
+cmd.width=5000;
+
+!msgbox=Look how wide i'm;
+cmd.width=1;
+!msgbox="You made me very small";
+cmd.width=7000;
+!msgbox="HaHaHa;
+loop&*t;
+ ~cmd,1;
+	[msgbox="You CLick me";
+	flushflags;
+goback>t;
+/

@@ -1,0 +1,4 @@
+showwindow;
+	hideide;
+!msgbox="Special User Command Kewl Huh";
+	showide;

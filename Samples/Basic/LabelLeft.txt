@@ -1,0 +1,5 @@
+showwindow;
+create>label>lbl;
+lbl.left=1000;
+!msgbox="I'm Way over here";
+/

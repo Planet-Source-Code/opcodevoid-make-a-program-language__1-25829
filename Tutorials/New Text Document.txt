@@ -1,0 +1,195 @@
+			Flamming Ice Tutorial
+Note: a wrote really fast and may not have explain some stuff as well as i should have so email me if you have
+any problems at vbmew@hotmail.com
+
+
+Note again:Flamming is only here to help people learn about scripting languages its not a devalopment langauge
+its very slow.This tutorial is for someone who alreadys knows programming not a great deal but some like a little						
+		
+
+:Huge NOTE Read this one if you don't read nothing else
+flamming ice has a lot of gliches one big one is that it likes you to type at the beginning of the line like this
+
+h;
+hh;
+hhh;
+hhhh;
+
+
+
+About Flamming ice
+
+	Flamming ice was created so i could find out how computors handle
+messages, and loops i always wonderd how the cpu knew were to go when you use
+the "goto" command. I also wanted to know how it knew when you click a command button
+or how functions work we'll this program will show you how to do that because it comes with full
+source. Flamming ice is basically emulations and my twisted language my langauge consists of 5 different commands
+
+. = Object Command:Change objects Properties such as top left width height
+> = Pointer:access function by the compiler
+! = Direct Double Command:use this for messageboxes ect
+~ = Compare message:use this to see if someone click one of your objects
+[ = DO if flag = true:Commands or only done if flags is true
+  = Direct Command:Just one statement command
+
+
+
+
+1.Flamming Create Commands
+
+    Pointer       Pointer
+      |  	    |
+create>commandbutton>cmd;
+   |         |        |
+Command    Type	     Id
+
+
+that command creates a command button with cmd as the id
+you can use this id to change the properties of the command button.
+Before you use this command you need a window to show to do this use the simple command
+
+showwindow;
+
+this pops up an nice window.
+Now you can use the create command you can also create different types such as
+
+label
+textbox
+
+so lets make an example program
+
+
+showwindow;
+create>commandbutton>cmd;
+
+thats it kewl huh?
+
+
+
+2.Loops
+
+loop&*t;
+
+
+thats a simple loop the way the compiler get it is
+
+get command until i see & so the & tells the compiler that you want an loop * tells the compile
+to register and address so it would register address "t" in its memory.
+example if t's offset is 12 then the compiler remanbers 12.
+
+
+
+3.Go backs and messages
+
+
+go back is a pointer command that goes back to a loop you specifed. Message or commands 
+you Objects get.Lets say someone clicks your command button your command button id memory would hold 1.
+If you don't under stand look below
+
+
+showwindow; ? shows a window_
+create>commandbutton>cmd; ? create command button_
+loop&*t; ? Main loop _
+	~cmd,1 ? cmp message to 1 = left_Click _
+	[msgbox="You clicked me"; ? if click pop up message box _
+flushflags; ? flush flags so it want keep poping up the box _
+goback>t; ? goback to t _
+
+thats alot to understand right now first lets start with the new commands
+
+? = Comment the compiler ignores this it start getting data when you use this _
+
+example
+------------------------------------
+? This will never get process _
+------------------------------------
+
+~ = Compare an object to a value
+
+
+example
+--------------------------------
+~myobjectnamehere,1
+--------------------------------
+
+if your object recived message 1 which is clicked it will set flag to true
+
+[ = Do only if flag is true(only for direct commands)
+
+example
+---------------------------------------
+[showwindow; 
+---------------------------------------
+it will only show if a condition is met
+
+msgbox = this pop up a message box  there or to types
+
+1 = msgbox,"Hello World";
+2 = !msgbox ="Hello World";
+
+
+if first type don't work use second because this still has alot of gliches
+
+example
+
+-----------------------------------------
+msgbox= "Hello World";
+-----------------------------------------
+
+you need " to begin and end your msgbox command if you don't you'll end up with HelloWorld
+
+
+flushflags = Flush flag duh this flushes, or erase, or sets it back to false
+
+example
+------------------------
+flushflags;
+------------------------
+
+
+goback = Go back to a offset store in the compilers memory
+
+example
+-------------------------
+loop&*t;
+goback>t;
+-------------------------
+
+
+
+Compiler Commands:
+
+now that you learn a few commands you might want the user to expirences them to the fullest 
+well this Compiler allows you to do that with to commands compiler commands or case sen meaning HeLlO is different
+from hello.
+
+1. hideide = Hides the ide from the user
+2. showide = Shows Ide to the user
+3. idecaption = Changes Ide Caption
+
+example of idecaption
+--------------------------
+idecaption,"Hello World";
+--------------------------
+
+Manipulating Object
+to change a object caption, or width, height, left, or top is very easy
+
+Id.top = Change top
+Id.caption = Change Caption
+Id.left = Change Left
+Id.height = Change Height
+
+
+Menus:
+
+Command     Type     Parent
+ |           |       |
+new>      submenu>   0
+
+when create submenus you must refere to parent so that the compiler knows which window to put it under
+Its best if you use the menu editor in the Ide since i don't tell you everything about it.
+to see if you menu was click is easy
+
+menucompare,MenuId
+if it was click flag will be true

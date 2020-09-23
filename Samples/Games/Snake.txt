@@ -1,0 +1,42 @@
+showwindow;
+loop&*t;
+	
+? bx = YDirection_
+? cx = XDirection_
+? dx = YPos_
+? fx = XPos_
+
+
+	bx,1;
+	cx,0;
+	dx,300;
+	fx,300;
+
+loop&*f;
+add_reg_reg>dx>bx;
+add_reg_reg>fx>cx;
+ax,green;
+setpixel>fx>dx;
+	getwindowmessage;?Not Required unless you want to save_
+	cmp_window,40; ?Down Key_
+	[bx,1;
+	[cx,0;
+	flushflags;
+
+	cmp_window,39; ?Right Key_
+	[cx,1;
+	[bx,0;
+	flushflags;
+	
+	cmp_window,37; ?Left Key_
+	[bx,0;
+	[cx,-1;
+	flushflags;
+		
+	cmp_window,38; ? Up Key _
+	[bx,-1;
+	[cx,0;
+	flushflags;
+goback>f;
+/
+
