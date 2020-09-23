@@ -1,0 +1,13 @@
+showwindow;
+
+create>commandbutton>cmd;
+cmd.caption="Left | Right";
+loop&*d;
+	~cmd,2;
+	[msgbox="You Right Clicked Me";
+	flushflags;
+	~cmd,1;
+	[msgbox="You Left Clicked Me";
+	flushflags;
+goback>*d;
+/

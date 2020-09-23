@@ -1,0 +1,10 @@
+showwindow;
+create>commandbutton>cmd;
+cmd.caption="Click me";
+loop&*t;
+	~cmd,1;
+	[msgbox="You clicked me loser";
+	[msgbox="You Shoud Be Punish";
+	flushflags;
+goback>t;
+/

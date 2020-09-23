@@ -1,0 +1,6 @@
+showwindow;
+create>textbox>txt;
+txt.caption="Hello World";
+txt.width=6000;
+txt.top=0;
+txt.left=600;

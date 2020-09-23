@@ -1,0 +1,11 @@
+showwindow;
+
+loop&*t;
+	inputbox,Enter 5;
+	cmp, 'ax|5;
+	qie;
+	msgbox,"You did Not enter 5";
+	flushflags;
+goback>t;
+/
+	

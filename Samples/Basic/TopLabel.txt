@@ -1,0 +1,8 @@
+showwindow;
+create>label>lbl;
+lbl.top=0;
+loop&*t;
+!msgbox="Tell That Command Button that I can do the samething";
+lbl.top=6000;
+!msgbox="Do'h";
+/

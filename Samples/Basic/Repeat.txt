@@ -1,0 +1,15 @@
+
+?Example of a function_
+
+
+showwindow;
+
+
+?Function Show Repeat_
+loop&*t;
+ 	msgbox,"Repeat me";
+
+
+loop&*d;
+	msgbox,"Going to Reapeat forevery";
+goback>t;

@@ -1,0 +1,5 @@
+showwindow;
+loop&*t;
+        @Hello World;   
+	print;
+/;

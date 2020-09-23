@@ -1,0 +1,29 @@
+showwindow; 
+initmenu,0; 
+new>menu>1;
+
+menucaption>0>"File";
+submenucaption>0>"Exit"; 
+new>submenu>1;
+submenucolor>1>green;
+
+initmenu,1;
+menucaption>1>"Options";
+submenucaption>1>"Create a box";
+new>submenu>1;
+submenucaption>2>"It works";
+new>submenu>1;
+submenucaption>3>"It still Works";
+new>submenu>0;
+submenucaption>4>"Alright";
+loop&*t;
+menucompare,4;
+	[msgbox="Alright Yes ok";
+        flushflags;
+menucompare,0;
+	[end;
+	flushflags;
+menucompare,1;
+	[msgbox="Created";
+	flushflags;
+goback>t;

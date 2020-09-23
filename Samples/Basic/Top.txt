@@ -1,0 +1,8 @@
+showwindow;
+create>commandbutton>cmd;
+cmd.top=0;
+loop&*t;
+!msgbox="I'm at the top alright";
+cmd.top=3000;
+!msgbox="Nooooooo";
+/

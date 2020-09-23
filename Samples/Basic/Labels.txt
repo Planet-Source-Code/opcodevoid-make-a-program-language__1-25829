@@ -1,0 +1,11 @@
+showwindow;
+create>label>lbl;
+create>commandbutton>cmd;
+cmd.caption="Kewl";
+lbl.caption="A Basic Label";
+loop&*t;
+	~lbl,1;
+	[msgbox="I Didn't say click me";
+	flushflags;
+goback>t;
+/
